@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../favicon.ico?" type="image/x-icon">
+    <title>Алкени - Органічна Хімія</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.3/dist/katex.min.css" integrity="sha384-ThssJ7YtjywV52Gj4JE/1SQEDoMEckXyhkFVwaf4nDSm5OBlXeedVYjuuUd0Yua+" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.3/dist/katex.min.js" integrity="sha384-Bi8OWqMXO1ta+a4EPkZv7bYGIes7C3krGSZoTGNTAnAn5eYQc7IIXrJ/7ck1drAi" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.3/dist/contrib/mhchem.min.js" integrity="sha384-LIgAiYlGSAdpNC9+YDjDPF6JeS/RRIumtNo0CmyQERZ/+g0h9MbuYQwf/5pQ4Y4M" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.3/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"></script>
+
+</head>
+<body>
+    
+    <article class="subject" style="background: linear-gradient(280deg, rgba(235, 0, 255, 0.5) 0%, rgba(0, 71, 255, 0) 34.35%), linear-gradient(180deg, #004B5B 0%, #FFA7A7 100%), linear-gradient(244.35deg, #FFB26A 0%, #6badeb 50.58%, #00A3FF 100%), linear-gradient(244.35deg, #FFFFFF 0%, #004A74 49.48%, #FF0000 100%), radial-gradient(100% 233.99% at 0% 100%, #B70000 0%, #AD00FF 100%), linear-gradient(307.27deg, #219D87 0.37%, #2650BA 50.19%, #2800C6 100%), radial-gradient(100% 140% at 100% 0%, #FF00C7 0%, #006C7A 49.48%, #760000 100%);
+    background-blend-mode: hard-light, overlay, lighten, overlay, difference, difference, normal;">
+        <nav>
+            <div class="logo">
+                <a href="../index.html"><h3>Органічна Хімія</h3></a>
+            </div>
+            <ul>
+                <li><a href="../index.html">додому</a></li>
+                <li><a href="#" onclick="toggle()">теми</a></li>
+            </ul>
+        </nav>
+        <h1 class="title">Алкени</h1>
+        <div class="tags">
+            <h2>ненасичені вуглеводні</h2>
+            <h2>безоксигенно вмісні</h2>
+        </div>
+        <div class="grid-container">
+            <div class="grid-block-small">
+                <div class="block-small cyan1">
+                    <h3>Загальна формула:</h3>
+                    <p>C<sub>n</sub>H<sub>2n</sub>, n≥2.</p>
+                </div>
+                <div class="block-small purple1">
+                    <h3>Типи ізомерії:</h3>
+                    <p>структурна, міжкласова (ізомери циклоалканам) ізомерія.</p>
+                </div>
+            </div>
+            <div class="grid-block-small">
+                <div class="block-small green1">
+                    <h3>Довжина зв'язків:</h3>
+                    <p>між подвійним зв'язком атомів Карбону - 0.134нм, одинарного - 0.154нм.</p>
+                </div>
+                <div class="block-small blue1">
+                    <h3>Хімічні зв'язки:</h3>
+                    <p>сігма та пі зв'язки.</p>
+                </div>
+            </div>
+            <div class="grid-block orange1">
+                <h3>Застосування:</h3>
+                <p>використовуються у медицині, як розчинник.</p>
+            </div>
+            <div class="grid-block-small">
+                <div class="block-small cyan1">
+                    <h3>Агрегатний стан:</h3>
+                    <p>перші 3 гомологи - гази, наступні 14 - рідини, далі - тверді речовини.</p>
+                </div>
+                <div class="block-small pink1">
+                    <h3>Тип гібридизації</h3>
+                    <p>sp<sup>2</sup> гібридизація; валентний кут 120&deg;.</p>
+                </div>
+            </div>
+            
+            <div class="grid-block-long cyan1">
+                <button class="button" id="button" title="title">
+                   Номенклатура
+                   <svg xmlns="http://www.w3.org/2000/svg" id="chevron" title="chevron down" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div id="collapse-content" class="ccontent" style="max-height: 0;">
+                    <ol> 
+                        <li>
+                            Для утворення систематичної назви ненасиченого вуглеводню нерозгалуженої будови:
+                            <ol class="letters">
+                                <li>визначають атом Карбону з найменшим локантом, біля якого розташований кратний зв'язок;</li>
+                                <li>замінюють суфікс -ан алкану на суфікс -ен алкену.</li>  <!-- (для алкенів), або -ин (-ін) (для алкінів); в) відокремлюють локант від кореня і суфікса дефісом-->
+                            </ol>
+                        </li>
+                        <li>
+                            Для утворення систематичної назви ненасиченого вуглеводню розгалуженої будови:
+                            <ol class="letters">
+                                <li>вибирають найдовший карбоновий ланцюг, який містить кратний зв'язок;</li>
+                                <li>нумерацію починають з того кінця, до якого найближче розташований кратний зв'язок (згідно з принципом найменших локантів);</li>
+                                <ul>
+                                    <li>якщо в молекулі сполуки кратний зв'язок рівновіддалений від обох кінців карбонового ланцюга, то нумерацію починають з того кінця, до якого ближче розташований алкільний замісник;</li>
+                                    <li>якщо в молекулі сполуки кратний зв'язок рівновіддалений від обох кінців карбонового ланцюга, то у виборі нумерації користуються алфавітним порядком (етил —> метил —> пропіл).</li>
+                                </ul>
+                            </ol>
+                        </li>
+                        <li>
+                            У назві сполуки зазначають:
+                            <ol class="letters">
+                                <li>замісники, перераховані в алфавітному порядку, як й у випадку з алканами (відокремлені один від одного комами без пробілів, а від кореня ненасиченого вуглеводню - дефісом);</li>
+                                <li>назву ненасиченого вуглеводню, яка відловідае головному карбоновому ланцюгу (корінь) + ближчий до початку локант кратного зв'язку + суфікс -ен, які відокремлюються один від одного дефісами: </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="grid-block-long purple1">
+                <button class="button" id="button">
+                   Характерні реакції
+                   <svg xmlns="http://www.w3.org/2000/svg" id="chevron" alt ="chevron down" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div id="collapse-content" class="ccontent" style="max-height: 0;">
+                    <ol>
+                        <li>
+                            Галогенування: \(\ce{C_nH2_n + Hal2 -> C_nH2_nHal2}\)
+                        </li>
+                        <li>
+                            Гідрогенізація: \(\ce{C_nH2_n + H2 -> C_nH_{2n+2} }\)
+                        </li>
+                        <li>
+                            Гідроґеногалогенування: \(\ce{C_nH2_n + HHal2 -> C_nH_{2n+1}Hal}\)
+                        </li>
+                        <li>
+                            Гідратація: \(\ce{C_nH2_n + HOH -> C_nH_{2n+1}OH}\)
+                        </li>
+                        <li>
+                            Горіння: \(\ce{CH2\bond{2}CH2 + 3O2 -> 2CO2 + 2H2O}\)
+                        </li>
+                        <li>
+                            Часткове окиснення (якісна реакція): \(\ce{CH2\bond{2}CH2 ->[KMnO4] OH\bond{1}CH2\bond{1}CH2\bond{1}OH}\)
+                        </li>
+                        <li>
+                            Полімеризація: \(\ce{nCH2\bond{2}CH2 -> (\bond{1}CH2\bond{1}CH2\bond{1})_n}\)
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="grid-block-long pink1">
+                <button class="button" id="button">
+                   Способи добування
+                   <svg xmlns="http://www.w3.org/2000/svg" id="chevron" alt ="chevron down" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div id="collapse-content" class="ccontent" style="max-height: 0;">
+                    <ol>
+                        <li>
+                            Крекінг алканів: \(\ce{C8H18 ->[t&deg] C4H10 + C4H8}\)
+                        </li>
+                        <li>
+                            Дегідрування алканів: \(\ce{CH3\bond{1}CH3 -> CH2\bond{2}CH2 +H2 ^}\)
+                        </li>
+                        <li>
+                            Відщеплення галогеноводнів при розчині лугів:  \(\ce{CH3\bond{1}CH2\bond{1}CHBr\bond{1}CH3 + KOH -> CH3\bond{1}CH\bond{2}CH\bond{1}CH3 + KBr + H2)}\)
+                        </li>
+                        <li>
+                            Дегалогенування дигалогеноалканів: \(\ce{CH2Br\bond{1}CHBr\bond{1}CH3 + Mg -> CH2\bond{2}CH2\bond{1}CH3 + MgBr2}\)
+                        </li>
+                        <li>
+                            Дегідратація спиртів: \(\ce{C2H5OH ->[t&deg, H2SO4] C2H4 + H2O}\)
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <a href="../subjects/cycloalkane.html" class="prev">
+                <h2>Попереднє</h2>
+                <p>циклоалкани</p>
+            </a>
+            <a href="" class="next" onclick="tba()">
+                <h2>Наступне</h2>
+                <p>дієни</p>
+            </a>
+        </div>    
+    </article>
+    <section id="black-screen">
+    </section>
+    <section id="overflow">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" onclick="toggle()">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        <ul>
+            <div class="container-1">
+                <li class="overflowLi" id="deOxy"><a href="../subjects/alkane.html" data-oxy="deoxy">Алкани</a></li>
+                <li class="overflowLi" id="deOxy"><a href="../subjects/cycloalkane.html" data-oxy="deoxy">Циклоалкани</a></li>
+                <p class="watermarks watermark-1">насичені вуглеводні</p> 
+            </div>
+            <div class="container-2">
+                <li class="overflowLi" id="deOxy"><a href="#" data-oxy="deoxy">Алкени</a></li>
+                <li class="overflowLi" id="deOxy"><a href="" data-oxy="deoxy">Дієни</a></li>
+                <li class="overflowLi" id="deOxy"><a href="" data-oxy="deoxy">Алкіни</a></li>
+                <p class="watermarks watermark-2">ненасичені вуглеводні</p>
+            </div>
+            <li class="overflowLi" id="deOxy"><a href="" onclick="tba()">Ароматичні сполуки</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Насичені одноатомні спирти</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Феноли</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Багатоатомні спирти</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Альдегіди</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Карбонові кислоти</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Етери</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Естери</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Аміни (та анілін)</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Амінокислоти</a></li>
+        </ul>
+    </section>
+    <script src="../javascript/toggleMenu.js"></script>
+    <script src="../javascript/collapseMenu.js"></script>
+    <script src="../javascript/tba.js"></script>
+</body>
+</html>

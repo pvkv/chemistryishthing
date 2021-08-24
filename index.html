@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
+    <title>Органічна Хімія</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">
+               <a href=""><h3>Органічна Хімія</h3></a>
+            </div>
+            <ul>
+                <li><a href="#header">додому</a></li>
+                <li><a href="#main">теми</a></li>
+            </ul>
+        </nav>
+        <div class="text">
+            <h3>тільки краще</h3>
+            <h1>Тільки ХІМІЯ</h1>
+        </div>
+        <div class="cards-container">
+            <div class="card active">
+                <a href="#main"><h2>Дізнатись більше</h2></a>
+            </div>
+            <div class="card">
+                <a href="subjects/alkane.html"><h2>Алкани</h2></a>
+            </div>
+            <div class="card">
+                <a href="subjects/alkene.html"><h2>Алкени</h2></a>
+            </div>
+            <div class="card">
+                <a href="#main"><h2>Та інші</h2></a>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section tabindex="0" id="block-1" onclick="toggleOxy()">
+            <h2>Оксигенно вмісні</h2>
+        </section>
+        <section tabindex="0" id="block-2" onclick="toggleDeoxy()">
+            <h2>Безоксигенно вмісні</h2>
+        </section>
+        <section tabindex="0" id="block-3" onclick="toggle()">
+            <h2>Список усіх тем</h2>
+        </section>
+        
+    </main>
+    <section id="black-screen">
+    </section>
+    <section id="overflow">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" onclick="toggle()">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        <ul>
+            <div class="container-1">
+                <li class="overflowLi" id="deOxy"><a href="subjects/alkane.html" data-oxy="deoxy">Алкани</a></li>
+                <li class="overflowLi" id="deOxy"><a href="subjects/cycloalkane.html" data-oxy="deoxy">Циклоалкани</a></li>
+                <p class="watermarks watermark-1">насичені вуглеводні</p> 
+            </div>
+            <div class="container-2">
+                <li class="overflowLi" id="deOxy"><a href="subjects/alkene.html" data-oxy="deoxy">Алкени</a></li>
+                <li class="overflowLi" id="deOxy"><a href="" data-oxy="deoxy">Дієни</a></li>
+                <li class="overflowLi" id="deOxy"><a href="" data-oxy="deoxy">Алкіни</a></li>
+                <p class="watermarks watermark-2">ненасичені вуглеводні</p>
+            </div>
+            <li class="overflowLi" id="deOxy" style="display: block;"><a href="" onclick="tba()">Ароматичні сполуки</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Насичені одноатомні спирти</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Феноли</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Багатоатомні спирти</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Альдегіди</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Карбонові кислоти</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Етери</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Естери</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Аміни (та анілін)</a></li>
+            <li class="overflowLi" id="oxy"><a href="" onclick="tba()">Амінокислоти</a></li>
+        </ul>
+    </section>
+
+    <script src="javascript/toggleMenu.js"></script>
+    <script src="javascript/oxyDeoxyMenus.js"></script>
+    <script src="javascript/tba.js"></script>
+</body>
+</html>
